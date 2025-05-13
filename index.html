@@ -1,102 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Interval Timer Privacy Policy – <<App Name>></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body{font-family:system-ui,Arial,sans-serif;line-height:1.6;margin:0;padding:2rem;max-width:800px}
-    h1,h2{color:#222}
-    table{border-collapse:collapse;width:100%;margin:1rem 0}
-    th,td{border:1px solid #ccc;padding:.6rem;text-align:left;vertical-align:top}
-    th{background:#f5f5f5}
-    @media (prefers-color-scheme:dark){
-      body{background:#121212;color:#e0e0e0}
-      h1,h2{color:#fff}
-      th{background:#1f1f1f}
-      td,th{border-color:#444}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイトタイトル</title>
+    <style>
+        /* カラーテーマ変数 */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --header-bg: #f0f0f0;
+            --header-text: #000000;
+            --link-color: #1a73e8;
+            --card-bg: #ffffff;
+            --card-border: #dddddd;
+        }
+        /* ダークテーマ */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #ffffff;
+                --header-bg: #1f1f1f;
+                --header-text: #ffffff;
+                --link-color: #8ab4f8;
+                --card-bg: #1e1e1e;
+                --card-border: #333333;
+            }
+        }
+        /* 全体スタイル */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: sans-serif;
+        }
+        /* ヘッダースタイル */
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 1rem 2rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--header-text);
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: var(--link-color);
+        }
+        /* メイン */
+        main {
+            padding: 2rem;
+        }
+        /* 見出し中央揃えとサイズ */
+        main h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        /* リンクカードリスト（縦方向） */
+        .link-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        /* カードレイアウト */
+        .link-list li {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 1rem;
+            transition: transform 0.2s;
+        }
+        .link-list li:hover {
+            transform: translateY(-2px);
+        }
+        /* アイコン */
+        .link-list img.link-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 0.75rem;
+        }
+        /* テキストコンテンツ */
+        .link-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .link-content a {
+            text-decoration: none;
+            color: var(--link-color);
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+        .link-content a:hover {
+            text-decoration: underline;
+        }
+        .link-content p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+        /* プライバシーリンク */
+        .privacy-link {
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+        }
+        .privacy-link a {
+            text-decoration: none;
+            color: var(--link-color);
+        }
+        .privacy-link a:hover {
+            text-decoration: underline;
+        }
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.875rem;
+            border-top: 1px solid var(--header-bg);
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>Interval Timer Privacy Policy</h1>
-<p>Last updated: May 7, 2025</p>
+    <main>
+        <h1>ようこそ！</h1>
+        <p>ここにメインコンテンツを追加してください。</p>
+        
+        <!-- URLリンクカードのリスト -->
+        <ul class="link-list">
+            <li>
+                <img src="https://play-lh.googleusercontent.com/qtPJfTtlzf7STYSdYXAaILHm57iZ4Fwx8Jgd8fL3BlNal879fBGo0_MOWWVnUOs6Qo0=w240-h480" alt="Interval Timer Icon" class="link-icon">
+                <div class="link-content">
+                    <a href="https://play.google.com/store/apps/details?id=com.interval_timer" target="_blank" rel="noopener">Interval Timer</a>
+                    <p>運動、勉強、発表会などの場面で活用できるインターバルタイマーです。</p>
+                    <div class="privacy-link">
+                        <a href="interval_timer_privacy_policy.html" target="_blank" rel="noopener">このアプリに関するプライバシーポリシーはこちら</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="https://play-lh.googleusercontent.com/rfWIpToOHhzGGyN3tvRlOXoJ8bk4xkM4KUG9ZTlt9vWjEUnGhyBA6XJSOT41PY3lEQE=w240-h480" alt="Notifications Maker" class="link-icon">
+                <div class="link-content">
+                    <a href="https://play.google.com/store/apps/details?id=com.notification.creator" target="_blank" rel="noopener">Notifications Maker</a>
+                    <p>リマインダーとして活用できる通知アプリです。</p>
+                    <div class="privacy-link">
+                        <a href="notifications_creator_privacy_policy.html" target="_blank" rel="noopener">このアプリに関するプライバシーポリシーはこちら</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
 
-<h2>1. Introduction</h2>
-<p>
-  Interval Timer(hereinafter, “<strong>the App</strong>”) is a timer application provided by PsyTouSan (hereinafter, “<strong>we</strong>”).
-  This policy explains what user information the App handles, the purposes for which it is used, any sharing with third parties, and the rights available to users.
-  As of May 2025, the App is distributed <strong>exclusively on Google Play</strong>; there is no iOS version.
-</p>
-
-<h2>2. Information We Collect and Use</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Specific Data</th>
-      <th>Collection Method</th>
-      <th>Purpose</th>
-      <th>Retention</th>
-      <th>Shared With</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Device ID</strong></td>
-      <td>Android&nbsp;Advertising&nbsp;ID (AAID)</td>
-      <td>Automatically collected by the Google&nbsp;Mobile&nbsp;Ads SDK (AdMob)</td>
-      <td><strong>Advertising &amp; Marketing</strong><br>(personalised ads delivery and ad performance measurement)</td>
-      <td>We do <em>not</em> store this data on our servers; it is processed only inside the SDK.</td>
-      <td>Google LLC (AdMob service)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Data we <em>do not</em> collect:</strong> phone numbers, email addresses, location data, contact lists, usage logs, or any personal data other than the item shown above.</p>
-
-<h2>3. Sharing of Information</h2>
-<p>
-  We share the Advertising ID with Google LLC solely for the purpose stated above.  
-  Except where required by law, we do not share user data with any other third party.
-</p>
-
-<h2>4. User Choices (Opt‑out)</h2>
-<ul>
-  <li><strong>Android 13 or later</strong>:&nbsp;Settings › Privacy › Ads › <strong>Delete advertising ID</strong></li>
-  <li><strong>Android 12 or earlier</strong>:&nbsp;Settings › Google › Ads › <strong>Opt out of Ads Personalization</strong> or <strong>Reset advertising ID</strong></li>
-</ul>
-
-<h2>5. Children’s Privacy</h2>
-<p>
-  The App is not directed to children under 13, and we do not knowingly collect any personal information such children.
-  If we learn that we have inadvertently collected it, we will delete it promptly.
-</p>
-
-<h2>6. Data Security</h2>
-<p>
-  We do not retain the Advertising ID ourselves.  
-  All processing follows the security standards of the Google Mobile Ads SDK, and data in transit is encrypted via HTTPS.
-</p>
-
-<h2>7. International Data Transfers</h2>
-<p>
-  The Advertising ID may be transferred to and processed on servers operated by Google LLC outside your country.
-  Such transfers are conducted in compliance with applicable laws and regulations.
-</p>
-
-<h2>8. Changes to This Policy</h2>
-<p>
-  We may revise this policy from time to time. Significant changes will be announced within the App or on our website before they take effect.
-</p>
-
-<h2>9. Contact Us</h2>
-<p>
-  If you have any questions about this policy, please contact us at:<br>
-  Email: <a href="mailto:<<psytousan@gmail.com>>"><psytousan@gmail.com></a>psytousan@gmail.com<br>
-</p>
-
+    <footer>
+        <p>&copy; 2025 PsyTouSan</p>
+    </footer>
 </body>
 </html>
